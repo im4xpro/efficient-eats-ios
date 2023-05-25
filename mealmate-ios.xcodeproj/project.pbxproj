@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2EDE1692A1FF822000AB182 /* mealmate_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1682A1FF822000AB182 /* mealmate_iosApp.swift */; };
+		A2EDE16B2A1FF822000AB182 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE16A2A1FF822000AB182 /* ContentView.swift */; };
+		A2EDE16D2A1FF822000AB182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EDE16C2A1FF822000AB182 /* Assets.xcassets */; };
+		A2EDE1702A1FF822000AB182 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EDE16F2A1FF822000AB182 /* Preview Assets.xcassets */; };
+		A2EDE1722A1FF822000AB182 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1712A1FF822000AB182 /* Persistence.swift */; };
+		A2EDE1752A1FF822000AB182 /* mealmate_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1732A1FF822000AB182 /* mealmate_ios.xcdatamodeld */; };
+		A2EDE17F2A1FF822000AB182 /* mealmate_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE17E2A1FF822000AB182 /* mealmate_iosTests.swift */; };
+		A2EDE1892A1FF822000AB182 /* mealmate_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1882A1FF822000AB182 /* mealmate_iosUITests.swift */; };
+		A2EDE18B2A1FF822000AB182 /* mealmate_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE18A2A1FF822000AB182 /* mealmate_iosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2EDE17B2A1FF822000AB182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2EDE15D2A1FF822000AB182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2EDE1642A1FF822000AB182;
+			remoteInfo = "mealmate-ios";
+		};
+		A2EDE1852A1FF822000AB182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2EDE15D2A1FF822000AB182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2EDE1642A1FF822000AB182;
+			remoteInfo = "mealmate-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2EDE1652A1FF822000AB182 /* mealmate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mealmate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EDE1682A1FF822000AB182 /* mealmate_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosApp.swift; sourceTree = "<group>"; };
+		A2EDE16A2A1FF822000AB182 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2EDE16C2A1FF822000AB182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2EDE16F2A1FF822000AB182 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2EDE1712A1FF822000AB182 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A2EDE1742A1FF822000AB182 /* mealmate_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mealmate_ios.xcdatamodel; sourceTree = "<group>"; };
+		A2EDE17A2A1FF822000AB182 /* mealmate-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mealmate-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EDE17E2A1FF822000AB182 /* mealmate_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosTests.swift; sourceTree = "<group>"; };
+		A2EDE1842A1FF822000AB182 /* mealmate-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mealmate-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EDE1882A1FF822000AB182 /* mealmate_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosUITests.swift; sourceTree = "<group>"; };
+		A2EDE18A2A1FF822000AB182 /* mealmate_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2EDE1622A1FF822000AB182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EDE1772A1FF822000AB182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EDE1812A1FF822000AB182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2EDE15C2A1FF822000AB182 = {
+			isa = PBXGroup;
+			children = (
+				A2EDE1672A1FF822000AB182 /* mealmate-ios */,
+				A2EDE17D2A1FF822000AB182 /* mealmate-iosTests */,
+				A2EDE1872A1FF822000AB182 /* mealmate-iosUITests */,
+				A2EDE1662A1FF822000AB182 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2EDE1662A1FF822000AB182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2EDE1652A1FF822000AB182 /* mealmate-ios.app */,
+				A2EDE17A2A1FF822000AB182 /* mealmate-iosTests.xctest */,
+				A2EDE1842A1FF822000AB182 /* mealmate-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2EDE1672A1FF822000AB182 /* mealmate-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A2EDE1682A1FF822000AB182 /* mealmate_iosApp.swift */,
+				A2EDE16A2A1FF822000AB182 /* ContentView.swift */,
+				A2EDE16C2A1FF822000AB182 /* Assets.xcassets */,
+				A2EDE1712A1FF822000AB182 /* Persistence.swift */,
+				A2EDE1732A1FF822000AB182 /* mealmate_ios.xcdatamodeld */,
+				A2EDE16E2A1FF822000AB182 /* Preview Content */,
+			);
+			path = "mealmate-ios";
+			sourceTree = "<group>";
+		};
+		A2EDE16E2A1FF822000AB182 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A2EDE16F2A1FF822000AB182 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A2EDE17D2A1FF822000AB182 /* mealmate-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2EDE17E2A1FF822000AB182 /* mealmate_iosTests.swift */,
+			);
+			path = "mealmate-iosTests";
+			sourceTree = "<group>";
+		};
+		A2EDE1872A1FF822000AB182 /* mealmate-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2EDE1882A1FF822000AB182 /* mealmate_iosUITests.swift */,
+				A2EDE18A2A1FF822000AB182 /* mealmate_iosUITestsLaunchTests.swift */,
+			);
+			path = "mealmate-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2EDE1642A1FF822000AB182 /* mealmate-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EDE18E2A1FF822000AB182 /* Build configuration list for PBXNativeTarget "mealmate-ios" */;
+			buildPhases = (
+				A2EDE1612A1FF822000AB182 /* Sources */,
+				A2EDE1622A1FF822000AB182 /* Frameworks */,
+				A2EDE1632A1FF822000AB182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mealmate-ios";
+			productName = "mealmate-ios";
+			productReference = A2EDE1652A1FF822000AB182 /* mealmate-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2EDE1792A1FF822000AB182 /* mealmate-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EDE1912A1FF822000AB182 /* Build configuration list for PBXNativeTarget "mealmate-iosTests" */;
+			buildPhases = (
+				A2EDE1762A1FF822000AB182 /* Sources */,
+				A2EDE1772A1FF822000AB182 /* Frameworks */,
+				A2EDE1782A1FF822000AB182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2EDE17C2A1FF822000AB182 /* PBXTargetDependency */,
+			);
+			name = "mealmate-iosTests";
+			productName = "mealmate-iosTests";
+			productReference = A2EDE17A2A1FF822000AB182 /* mealmate-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2EDE1832A1FF822000AB182 /* mealmate-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EDE1942A1FF822000AB182 /* Build configuration list for PBXNativeTarget "mealmate-iosUITests" */;
+			buildPhases = (
+				A2EDE1802A1FF822000AB182 /* Sources */,
+				A2EDE1812A1FF822000AB182 /* Frameworks */,
+				A2EDE1822A1FF822000AB182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2EDE1862A1FF822000AB182 /* PBXTargetDependency */,
+			);
+			name = "mealmate-iosUITests";
+			productName = "mealmate-iosUITests";
+			productReference = A2EDE1842A1FF822000AB182 /* mealmate-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2EDE15D2A1FF822000AB182 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A2EDE1642A1FF822000AB182 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					A2EDE1792A1FF822000AB182 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A2EDE1642A1FF822000AB182;
+					};
+					A2EDE1832A1FF822000AB182 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A2EDE1642A1FF822000AB182;
+					};
+				};
+			};
+			buildConfigurationList = A2EDE1602A1FF822000AB182 /* Build configuration list for PBXProject "mealmate-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2EDE15C2A1FF822000AB182;
+			productRefGroup = A2EDE1662A1FF822000AB182 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2EDE1642A1FF822000AB182 /* mealmate-ios */,
+				A2EDE1792A1FF822000AB182 /* mealmate-iosTests */,
+				A2EDE1832A1FF822000AB182 /* mealmate-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2EDE1632A1FF822000AB182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EDE1702A1FF822000AB182 /* Preview Assets.xcassets in Resources */,
+				A2EDE16D2A1FF822000AB182 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EDE1782A1FF822000AB182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EDE1822A1FF822000AB182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2EDE1612A1FF822000AB182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EDE1722A1FF822000AB182 /* Persistence.swift in Sources */,
+				A2EDE1752A1FF822000AB182 /* mealmate_ios.xcdatamodeld in Sources */,
+				A2EDE16B2A1FF822000AB182 /* ContentView.swift in Sources */,
+				A2EDE1692A1FF822000AB182 /* mealmate_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EDE1762A1FF822000AB182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EDE17F2A1FF822000AB182 /* mealmate_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EDE1802A1FF822000AB182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EDE18B2A1FF822000AB182 /* mealmate_iosUITestsLaunchTests.swift in Sources */,
+				A2EDE1892A1FF822000AB182 /* mealmate_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2EDE17C2A1FF822000AB182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2EDE1642A1FF822000AB182 /* mealmate-ios */;
+			targetProxy = A2EDE17B2A1FF822000AB182 /* PBXContainerItemProxy */;
+		};
+		A2EDE1862A1FF822000AB182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2EDE1642A1FF822000AB182 /* mealmate-ios */;
+			targetProxy = A2EDE1852A1FF822000AB182 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A2EDE18C2A1FF822000AB182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2EDE18D2A1FF822000AB182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2EDE18F2A1FF822000AB182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mealmate-ios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mk.mealmate-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2EDE1902A1FF822000AB182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mealmate-ios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mk.mealmate-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2EDE1922A1FF822000AB182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mk.mealmate-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mealmate-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mealmate-ios";
+			};
+			name = Debug;
+		};
+		A2EDE1932A1FF822000AB182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mk.mealmate-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mealmate-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mealmate-ios";
+			};
+			name = Release;
+		};
+		A2EDE1952A1FF822000AB182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mk.mealmate-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mealmate-ios";
+			};
+			name = Debug;
+		};
+		A2EDE1962A1FF822000AB182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mk.mealmate-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mealmate-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2EDE1602A1FF822000AB182 /* Build configuration list for PBXProject "mealmate-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EDE18C2A1FF822000AB182 /* Debug */,
+				A2EDE18D2A1FF822000AB182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EDE18E2A1FF822000AB182 /* Build configuration list for PBXNativeTarget "mealmate-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EDE18F2A1FF822000AB182 /* Debug */,
+				A2EDE1902A1FF822000AB182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EDE1912A1FF822000AB182 /* Build configuration list for PBXNativeTarget "mealmate-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EDE1922A1FF822000AB182 /* Debug */,
+				A2EDE1932A1FF822000AB182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EDE1942A1FF822000AB182 /* Build configuration list for PBXNativeTarget "mealmate-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EDE1952A1FF822000AB182 /* Debug */,
+				A2EDE1962A1FF822000AB182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2EDE1732A1FF822000AB182 /* mealmate_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2EDE1742A1FF822000AB182 /* mealmate_ios.xcdatamodel */,
+			);
+			currentVersion = A2EDE1742A1FF822000AB182 /* mealmate_ios.xcdatamodel */;
+			path = mealmate_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A2EDE15D2A1FF822000AB182 /* Project object */;
+}
