@@ -67,7 +67,7 @@ struct RefrigeratorView: View {
         }
         .searchable(text: $searchText, prompt: "I'm looking for...")
         .onAppear(
-            perform: { apiHandler.getIngredients() }
+            perform: { viewModel.reloadData() }
         )
     }
 }

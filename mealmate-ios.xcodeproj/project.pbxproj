@@ -25,7 +25,6 @@
 		A2BBEB912A203A0600904B92 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB902A203A0600904B92 /* AddItemView.swift */; };
 		A2BBEB932A209D9C00904B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB922A209D9C00904B92 /* AppDelegate.swift */; };
 		A2BBEB952A20A91600904B92 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB942A20A91600904B92 /* APIHandler.swift */; };
-		A2BBEB972A20A94200904B92 /* BackendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB962A20A94200904B92 /* BackendItem.swift */; };
 		A2EDE1A42A1FFD0B000AB182 /* mealmate_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1A32A1FFD0B000AB182 /* mealmate_iosApp.swift */; };
 		A2EDE1A82A1FFD0B000AB182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EDE1A72A1FFD0B000AB182 /* Assets.xcassets */; };
 		A2EDE1AB2A1FFD0B000AB182 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EDE1AA2A1FFD0B000AB182 /* Preview Assets.xcassets */; };
@@ -71,7 +70,6 @@
 		A2BBEB902A203A0600904B92 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		A2BBEB922A209D9C00904B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2BBEB942A20A91600904B92 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
-		A2BBEB962A20A94200904B92 /* BackendItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendItem.swift; sourceTree = "<group>"; };
 		A2EDE1A02A1FFD0B000AB182 /* mealmate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mealmate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EDE1A32A1FFD0B000AB182 /* mealmate_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosApp.swift; sourceTree = "<group>"; };
 		A2EDE1A72A1FFD0B000AB182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				A2BBEB872A202FE800904B92 /* RecipeIngredient.swift */,
 				A2BBEB892A20300D00904B92 /* Ingredient.swift */,
 				A2BBEB8D2A20310F00904B92 /* Recipe.swift */,
-				A2BBEB962A20A94200904B92 /* BackendItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -378,7 +375,6 @@
 				A2BBEB912A203A0600904B92 /* AddItemView.swift in Sources */,
 				A2BBEB8C2A20305800904B92 /* ConsumableItem.swift in Sources */,
 				A2BBEB782A200AD400904B92 /* RecipesViewModel.swift in Sources */,
-				A2BBEB972A20A94200904B92 /* BackendItem.swift in Sources */,
 				A2BBEB7B2A200C4700904B92 /* ProfileView.swift in Sources */,
 				A2BBEB952A20A91600904B92 /* APIHandler.swift in Sources */,
 				A2BBEB8A2A20300D00904B92 /* Ingredient.swift in Sources */,

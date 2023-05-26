@@ -31,7 +31,7 @@ struct FridgeItemCell: View {
                 VStack(alignment: .leading){
                     Text(model.name)
                         .font(.title2)
-                    Text(model.category.rawValue)
+                    Text("\(model.amount) pcs")
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }

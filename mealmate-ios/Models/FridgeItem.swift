@@ -5,6 +5,7 @@ import SwiftUI
 struct FridgeItem: Identifiable {
     let id = UUID()
     let name: String
+    let amount: Int
     let description: String
     let addedDate: Date
     let expirationDate: Date
@@ -24,8 +25,9 @@ struct FridgeItem: Identifiable {
         }
     }
     
-    init(name: String, description: String, addedDate: Date, expirationDate: Date, category: FridgeItemCategory) {
+    init(name: String,amount: Int, description: String, addedDate: Date, expirationDate: Date, category: FridgeItemCategory) {
         self.name = name
+        self.amount = amount
         self.description = description
         self.addedDate = addedDate
         self.expirationDate = expirationDate
@@ -55,10 +57,10 @@ public func calculateDateDifference(startDate: Date, endDate: Date) -> DateCompo
 
 extension FridgeItem {
     static let mockItems = [
-        FridgeItem(name: "Milk", description: "Muuh", addedDate: Date(), expirationDate: Date(fromString: "2023-05-30")!, category: .food),
-        FridgeItem(name: "Butter", description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-06-30")!, category: .food),
-        FridgeItem(name: "Olives", description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-07-20")!, category: .food),
-        FridgeItem(name: "Yoghurt", description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-05-24")!, category: .food),
-        FridgeItem(name: "Chicken", description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-05-30")!, category: .food)
+        FridgeItem(name: "Milk", amount: 2, description: "Muuh", addedDate: Date(), expirationDate: Date(fromString: "2023-05-30")!, category: .food),
+        FridgeItem(name: "Butter", amount: 2, description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-06-30")!, category: .food),
+        FridgeItem(name: "Olives", amount: 2, description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-07-20")!, category: .food),
+        FridgeItem(name: "Yoghurt", amount: 2, description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-05-24")!, category: .food),
+        FridgeItem(name: "Chicken", amount: 2, description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-05-30")!, category: .food)
     ]
 }
