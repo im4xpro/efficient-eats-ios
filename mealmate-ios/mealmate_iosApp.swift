@@ -1,17 +1,25 @@
-//
-//  mealmate_iosApp.swift
-//  mealmate-ios
-//
-//  Created by Maximilian Kaiser on 25.05.23.
-//
-
 import SwiftUI
+import ParseSwift
 
 @main
 struct mealmate_iosApp: App {
+    
+    @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
+    let viewModel = AppViewModel(fridgeItems: [], recipes: [])
+    
+    init() {
+        loadMockDataToVM()
+        
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(viewModel: viewModel)
         }
+    }
+        
+    
+    func loadMockDataToVM() {
+        viewModel.fridgeItems += FridgeItem.mockItems
+        viewModel.recipes += Recipe.mockData
     }
 }

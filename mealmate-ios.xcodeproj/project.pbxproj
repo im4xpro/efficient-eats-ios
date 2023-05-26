@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2BBEB6C2A2009A600904B92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB6B2A2009A600904B92 /* MainView.swift */; };
+		A2BBEB6E2A2009E800904B92 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB6D2A2009E800904B92 /* AppViewModel.swift */; };
+		A2BBEB712A200A7200904B92 /* RefrigeratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB702A200A7200904B92 /* RefrigeratorView.swift */; };
+		A2BBEB732A200A9900904B92 /* RefrigeratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB722A200A9900904B92 /* RefrigeratorViewModel.swift */; };
+		A2BBEB762A200AC800904B92 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB752A200AC800904B92 /* RecipesView.swift */; };
+		A2BBEB782A200AD400904B92 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB772A200AD400904B92 /* RecipesViewModel.swift */; };
+		A2BBEB7B2A200C4700904B92 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB7A2A200C4700904B92 /* ProfileView.swift */; };
+		A2BBEB7D2A200C5100904B92 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB7C2A200C5100904B92 /* ProfileViewModel.swift */; };
+		A2BBEB802A200CD700904B92 /* FridgeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB7F2A200CD700904B92 /* FridgeItemCell.swift */; };
+		A2BBEB832A20104800904B92 /* FridgeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB822A20104800904B92 /* FridgeItem.swift */; };
+		A2BBEB862A2013E300904B92 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB852A2013E300904B92 /* Date+Extensions.swift */; };
+		A2BBEB882A202FE800904B92 /* RecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB872A202FE800904B92 /* RecipeIngredient.swift */; };
+		A2BBEB8A2A20300D00904B92 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB892A20300D00904B92 /* Ingredient.swift */; };
+		A2BBEB8C2A20305800904B92 /* ConsumableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB8B2A20305800904B92 /* ConsumableItem.swift */; };
+		A2BBEB8E2A20310F00904B92 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB8D2A20310F00904B92 /* Recipe.swift */; };
+		A2BBEB912A203A0600904B92 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB902A203A0600904B92 /* AddItemView.swift */; };
+		A2BBEB932A209D9C00904B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB922A209D9C00904B92 /* AppDelegate.swift */; };
+		A2BBEB952A20A91600904B92 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB942A20A91600904B92 /* APIHandler.swift */; };
+		A2BBEB972A20A94200904B92 /* BackendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB962A20A94200904B92 /* BackendItem.swift */; };
 		A2EDE1A42A1FFD0B000AB182 /* mealmate_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1A32A1FFD0B000AB182 /* mealmate_iosApp.swift */; };
-		A2EDE1A62A1FFD0B000AB182 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1A52A1FFD0B000AB182 /* ContentView.swift */; };
 		A2EDE1A82A1FFD0B000AB182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EDE1A72A1FFD0B000AB182 /* Assets.xcassets */; };
 		A2EDE1AB2A1FFD0B000AB182 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EDE1AA2A1FFD0B000AB182 /* Preview Assets.xcassets */; };
 		A2EDE1B52A1FFD0B000AB182 /* mealmate_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1B42A1FFD0B000AB182 /* mealmate_iosTests.swift */; };
@@ -35,9 +53,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2BBEB6B2A2009A600904B92 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A2BBEB6D2A2009E800904B92 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		A2BBEB702A200A7200904B92 /* RefrigeratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorView.swift; sourceTree = "<group>"; };
+		A2BBEB722A200A9900904B92 /* RefrigeratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorViewModel.swift; sourceTree = "<group>"; };
+		A2BBEB752A200AC800904B92 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		A2BBEB772A200AD400904B92 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		A2BBEB7A2A200C4700904B92 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A2BBEB7C2A200C5100904B92 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A2BBEB7F2A200CD700904B92 /* FridgeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemCell.swift; sourceTree = "<group>"; };
+		A2BBEB822A20104800904B92 /* FridgeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItem.swift; sourceTree = "<group>"; };
+		A2BBEB852A2013E300904B92 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A2BBEB872A202FE800904B92 /* RecipeIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredient.swift; sourceTree = "<group>"; };
+		A2BBEB892A20300D00904B92 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		A2BBEB8B2A20305800904B92 /* ConsumableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumableItem.swift; sourceTree = "<group>"; };
+		A2BBEB8D2A20310F00904B92 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A2BBEB902A203A0600904B92 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		A2BBEB922A209D9C00904B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2BBEB942A20A91600904B92 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		A2BBEB962A20A94200904B92 /* BackendItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendItem.swift; sourceTree = "<group>"; };
 		A2EDE1A02A1FFD0B000AB182 /* mealmate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mealmate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EDE1A32A1FFD0B000AB182 /* mealmate_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosApp.swift; sourceTree = "<group>"; };
-		A2EDE1A52A1FFD0B000AB182 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2EDE1A72A1FFD0B000AB182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2EDE1AA2A1FFD0B000AB182 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A2EDE1B02A1FFD0B000AB182 /* mealmate-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mealmate-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +109,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2BBEB6F2A200A4200904B92 /* RefrigeratorOverview */ = {
+			isa = PBXGroup;
+			children = (
+				A2BBEB702A200A7200904B92 /* RefrigeratorView.swift */,
+				A2BBEB722A200A9900904B92 /* RefrigeratorViewModel.swift */,
+			);
+			path = RefrigeratorOverview;
+			sourceTree = "<group>";
+		};
+		A2BBEB742A200AB300904B92 /* RecipesOverview */ = {
+			isa = PBXGroup;
+			children = (
+				A2BBEB752A200AC800904B92 /* RecipesView.swift */,
+				A2BBEB772A200AD400904B92 /* RecipesViewModel.swift */,
+			);
+			path = RecipesOverview;
+			sourceTree = "<group>";
+		};
+		A2BBEB792A200C2D00904B92 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				A2BBEB7A2A200C4700904B92 /* ProfileView.swift */,
+				A2BBEB7C2A200C5100904B92 /* ProfileViewModel.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		A2BBEB7E2A200CB100904B92 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A2BBEB7F2A200CD700904B92 /* FridgeItemCell.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		A2BBEB812A20102900904B92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2BBEB8B2A20305800904B92 /* ConsumableItem.swift */,
+				A2BBEB822A20104800904B92 /* FridgeItem.swift */,
+				A2BBEB872A202FE800904B92 /* RecipeIngredient.swift */,
+				A2BBEB892A20300D00904B92 /* Ingredient.swift */,
+				A2BBEB8D2A20310F00904B92 /* Recipe.swift */,
+				A2BBEB962A20A94200904B92 /* BackendItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A2BBEB842A2013CF00904B92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2BBEB852A2013E300904B92 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A2BBEB8F2A2039E800904B92 /* AddItemView */ = {
+			isa = PBXGroup;
+			children = (
+				A2BBEB902A203A0600904B92 /* AddItemView.swift */,
+			);
+			path = AddItemView;
+			sourceTree = "<group>";
+		};
 		A2EDE1972A1FFD0B000AB182 = {
 			isa = PBXGroup;
 			children = (
@@ -96,10 +196,20 @@
 		A2EDE1A22A1FFD0B000AB182 /* mealmate-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A2BBEB8F2A2039E800904B92 /* AddItemView */,
+				A2BBEB842A2013CF00904B92 /* Extensions */,
+				A2BBEB812A20102900904B92 /* Models */,
+				A2BBEB7E2A200CB100904B92 /* ViewComponents */,
+				A2BBEB792A200C2D00904B92 /* ProfileView */,
+				A2BBEB742A200AB300904B92 /* RecipesOverview */,
+				A2BBEB6F2A200A4200904B92 /* RefrigeratorOverview */,
 				A2EDE1A32A1FFD0B000AB182 /* mealmate_iosApp.swift */,
-				A2EDE1A52A1FFD0B000AB182 /* ContentView.swift */,
+				A2BBEB6B2A2009A600904B92 /* MainView.swift */,
 				A2EDE1A72A1FFD0B000AB182 /* Assets.xcassets */,
 				A2EDE1A92A1FFD0B000AB182 /* Preview Content */,
+				A2BBEB6D2A2009E800904B92 /* AppViewModel.swift */,
+				A2BBEB922A209D9C00904B92 /* AppDelegate.swift */,
+				A2BBEB942A20A91600904B92 /* APIHandler.swift */,
 			);
 			path = "mealmate-ios";
 			sourceTree = "<group>";
@@ -265,8 +375,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2EDE1A62A1FFD0B000AB182 /* ContentView.swift in Sources */,
+				A2BBEB912A203A0600904B92 /* AddItemView.swift in Sources */,
+				A2BBEB8C2A20305800904B92 /* ConsumableItem.swift in Sources */,
+				A2BBEB782A200AD400904B92 /* RecipesViewModel.swift in Sources */,
+				A2BBEB972A20A94200904B92 /* BackendItem.swift in Sources */,
+				A2BBEB7B2A200C4700904B92 /* ProfileView.swift in Sources */,
+				A2BBEB952A20A91600904B92 /* APIHandler.swift in Sources */,
+				A2BBEB8A2A20300D00904B92 /* Ingredient.swift in Sources */,
+				A2BBEB6C2A2009A600904B92 /* MainView.swift in Sources */,
+				A2BBEB7D2A200C5100904B92 /* ProfileViewModel.swift in Sources */,
+				A2BBEB802A200CD700904B92 /* FridgeItemCell.swift in Sources */,
+				A2BBEB862A2013E300904B92 /* Date+Extensions.swift in Sources */,
+				A2BBEB6E2A2009E800904B92 /* AppViewModel.swift in Sources */,
 				A2EDE1A42A1FFD0B000AB182 /* mealmate_iosApp.swift in Sources */,
+				A2BBEB882A202FE800904B92 /* RecipeIngredient.swift in Sources */,
+				A2BBEB932A209D9C00904B92 /* AppDelegate.swift in Sources */,
+				A2BBEB832A20104800904B92 /* FridgeItem.swift in Sources */,
+				A2BBEB732A200A9900904B92 /* RefrigeratorViewModel.swift in Sources */,
+				A2BBEB712A200A7200904B92 /* RefrigeratorView.swift in Sources */,
+				A2BBEB762A200AC800904B92 /* RecipesView.swift in Sources */,
+				A2BBEB8E2A20310F00904B92 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
