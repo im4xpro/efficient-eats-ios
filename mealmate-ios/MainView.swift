@@ -13,7 +13,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Rezepte", systemImage: "menucard")
                 }
-            ProfileView()
+            ProfileView(viewModel: viewModel)
                 .tabItem {
                     Label("Profil", systemImage: "person")
                 }

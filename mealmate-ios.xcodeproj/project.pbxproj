@@ -25,6 +25,10 @@
 		A2BBEB912A203A0600904B92 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB902A203A0600904B92 /* AddItemView.swift */; };
 		A2BBEB932A209D9C00904B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB922A209D9C00904B92 /* AppDelegate.swift */; };
 		A2BBEB952A20A91600904B92 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB942A20A91600904B92 /* APIHandler.swift */; };
+		A2BBEB992A20D87B00904B92 /* RecipeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB982A20D87B00904B92 /* RecipeListCell.swift */; };
+		A2BBEB9B2A20E31E00904B92 /* FridgeItemDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB9A2A20E31E00904B92 /* FridgeItemDataEntry.swift */; };
+		A2BBEBA02A21635000904B92 /* KPIDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEB9F2A21635000904B92 /* KPIDataCell.swift */; };
+		A2BBEBA22A21721100904B92 /* HighlightedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BBEBA12A21721100904B92 /* HighlightedItemCell.swift */; };
 		A2EDE1A42A1FFD0B000AB182 /* mealmate_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EDE1A32A1FFD0B000AB182 /* mealmate_iosApp.swift */; };
 		A2EDE1A82A1FFD0B000AB182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EDE1A72A1FFD0B000AB182 /* Assets.xcassets */; };
 		A2EDE1AB2A1FFD0B000AB182 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EDE1AA2A1FFD0B000AB182 /* Preview Assets.xcassets */; };
@@ -70,6 +74,10 @@
 		A2BBEB902A203A0600904B92 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		A2BBEB922A209D9C00904B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2BBEB942A20A91600904B92 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		A2BBEB982A20D87B00904B92 /* RecipeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListCell.swift; sourceTree = "<group>"; };
+		A2BBEB9A2A20E31E00904B92 /* FridgeItemDataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemDataEntry.swift; sourceTree = "<group>"; };
+		A2BBEB9F2A21635000904B92 /* KPIDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPIDataCell.swift; sourceTree = "<group>"; };
+		A2BBEBA12A21721100904B92 /* HighlightedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedItemCell.swift; sourceTree = "<group>"; };
 		A2EDE1A02A1FFD0B000AB182 /* mealmate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mealmate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EDE1A32A1FFD0B000AB182 /* mealmate_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosApp.swift; sourceTree = "<group>"; };
 		A2EDE1A72A1FFD0B000AB182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				A2BBEB7F2A200CD700904B92 /* FridgeItemCell.swift */,
+				A2BBEB982A20D87B00904B92 /* RecipeListCell.swift */,
+				A2BBEB9F2A21635000904B92 /* KPIDataCell.swift */,
+				A2BBEBA12A21721100904B92 /* HighlightedItemCell.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -150,6 +161,7 @@
 				A2BBEB872A202FE800904B92 /* RecipeIngredient.swift */,
 				A2BBEB892A20300D00904B92 /* Ingredient.swift */,
 				A2BBEB8D2A20310F00904B92 /* Recipe.swift */,
+				A2BBEB9A2A20E31E00904B92 /* FridgeItemDataEntry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -374,19 +386,23 @@
 			files = (
 				A2BBEB912A203A0600904B92 /* AddItemView.swift in Sources */,
 				A2BBEB8C2A20305800904B92 /* ConsumableItem.swift in Sources */,
+				A2BBEBA22A21721100904B92 /* HighlightedItemCell.swift in Sources */,
 				A2BBEB782A200AD400904B92 /* RecipesViewModel.swift in Sources */,
 				A2BBEB7B2A200C4700904B92 /* ProfileView.swift in Sources */,
 				A2BBEB952A20A91600904B92 /* APIHandler.swift in Sources */,
 				A2BBEB8A2A20300D00904B92 /* Ingredient.swift in Sources */,
 				A2BBEB6C2A2009A600904B92 /* MainView.swift in Sources */,
 				A2BBEB7D2A200C5100904B92 /* ProfileViewModel.swift in Sources */,
+				A2BBEB9B2A20E31E00904B92 /* FridgeItemDataEntry.swift in Sources */,
 				A2BBEB802A200CD700904B92 /* FridgeItemCell.swift in Sources */,
 				A2BBEB862A2013E300904B92 /* Date+Extensions.swift in Sources */,
 				A2BBEB6E2A2009E800904B92 /* AppViewModel.swift in Sources */,
 				A2EDE1A42A1FFD0B000AB182 /* mealmate_iosApp.swift in Sources */,
 				A2BBEB882A202FE800904B92 /* RecipeIngredient.swift in Sources */,
+				A2BBEBA02A21635000904B92 /* KPIDataCell.swift in Sources */,
 				A2BBEB932A209D9C00904B92 /* AppDelegate.swift in Sources */,
 				A2BBEB832A20104800904B92 /* FridgeItem.swift in Sources */,
+				A2BBEB992A20D87B00904B92 /* RecipeListCell.swift in Sources */,
 				A2BBEB732A200A9900904B92 /* RefrigeratorViewModel.swift in Sources */,
 				A2BBEB712A200A7200904B92 /* RefrigeratorView.swift in Sources */,
 				A2BBEB762A200AC800904B92 /* RecipesView.swift in Sources */,
