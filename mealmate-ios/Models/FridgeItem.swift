@@ -57,10 +57,10 @@ public func calculateDateDifference(startDate: Date, endDate: Date) -> DateCompo
 
 extension FridgeItem {
     static let mockItems = [
-        FridgeItem(name: "Milk", amount: 2, description: "Muuh", addedDate: Date(), expirationDate: Date(fromString: "2023-05-30")!, category: .food),
-        FridgeItem(name: "Butter", amount: 2, description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-06-30")!, category: .food),
-        FridgeItem(name: "Olives", amount: 2, description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-07-20")!, category: .food),
-        FridgeItem(name: "Yoghurt", amount: 2, description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-05-24")!, category: .food),
-        FridgeItem(name: "Chicken", amount: 2, description: "", addedDate: Date(), expirationDate: Date(fromString: "2023-05-30")!, category: .food)
+        FridgeItem(name: "Milch", amount: 2, description: "Muuh", addedDate: Date(fromString: "2023-05-25")!, expirationDate: Date(fromString: "2023-05-30")!, category: .food),
+        FridgeItem(name: "Butter", amount: 2, description: "", addedDate: Date(fromString: "2023-05-25")!, expirationDate: Date(fromString: "2023-06-30")!, category: .food),
+        FridgeItem(name: "Oliven", amount: 2, description: "", addedDate: Date(fromString: "2023-05-25")!, expirationDate: Date(fromString: "2023-07-20")!, category: .food),
+        FridgeItem(name: "Joghurt", amount: 2, description: "", addedDate: Date(fromString: "2023-05-25")!, expirationDate: Date(fromString: "2023-05-24")!, category: .food),
+        FridgeItem(name: "Hühnchen", amount: 2, description: "", addedDate: Date(fromString: "2023-05-25")!, expirationDate: Date(fromString: "2023-05-30")!, category: .food)
     ]
 }

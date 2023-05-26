@@ -67,13 +67,13 @@ struct RefrigeratorView: View {
         }
         .searchable(text: $searchText, prompt: "I'm looking for...")
         .onAppear(
-            perform: { viewModel.reloadData() }
+            perform: { viewModel.reloadIngredientsData() }
         )
     }
 }
 
 struct RefrigeratorView_Previews: PreviewProvider {
     static var previews: some View {
-        RefrigeratorView(viewModel: AppViewModel(fridgeItems: [], recipes: []))
+        RefrigeratorView(viewModel: AppViewModel(fridgeItems: []))
     }
 }
