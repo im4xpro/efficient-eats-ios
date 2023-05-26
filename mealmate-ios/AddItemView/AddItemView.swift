@@ -6,13 +6,14 @@ struct AddItemView: View {
     
     @Environment(\.presentationMode) private var presentationMode
     @State private var userInputName = ""
-    @State private var userInputAmount = 0
+    @State private var userInputAmount = 1
+    @State private var userInputDate = Date()
     
     var knownItem: Bool {
         !viewModel.existingBackendItems.filter { $0.Name == userInputName }.isEmpty
     }
-    var item: BackendItem {
-        viewModel.existingBackendItems.filter { $0.Name == userInputName }.first!
+    var item: BackendFridgeItemResult? {
+        viewModel.existingBackendItems.filter { $0.Name == userInputName }.first
     }
     
     var body: some View {
@@ -22,16 +23,33 @@ struct AddItemView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal)
                 
-                if knownItem {
-                    Text("Expected shelf life: \(item.expirationTime) days.")
-                }
-                
                 Stepper("Amount: \(userInputAmount)", value: $userInputAmount, in: 1...10)
                                     .padding(.horizontal)
+                
+                DatePicker("Expiration date", selection: $userInputDate, displayedComponents: .date)
+                    .datePickerStyle(.graphical)
+                    .padding()
+                    .onChange(of: knownItem) { newValue in
+                        if knownItem {
+                            userInputDate = calculateExpirationDate(days: item!.expirationTime)
+                        } else {
+                            userInputDate = Date()
+                        }
+                    }
+                
+                if knownItem {
+                    Text("Info: Expected shelf life: \(item!.expirationTime) days.")
+                } else {
+                    Text("Select the expiration date.")
+                }
+                
                 Spacer()
                 Button(action: {
-                    let item = FridgeItem(name: userInputName, amount: userInputAmount, description: "", addedDate: Date(), expirationDate: Calendar.current.date(byAdding: DateComponents.init(day: item.expirationTime), to: Date())!, category: .food)
+                    let item = FridgeItem(name: userInputName, amount: userInputAmount, description: "", addedDate: Date(), expirationDate: userInputDate, category: .food)
+                    
                     viewModel.fridgeItems.append(item)
+                    
+                    // Calendar.current.date(byAdding: DateComponents.init(day: item.expirationTime)
                     
                     presentationMode.wrappedValue.dismiss()
                 }) {
@@ -43,15 +61,35 @@ struct AddItemView: View {
                         .cornerRadius(10)
                 }
                 .padding(.horizontal)
+                .disabled(userInputName.isEmpty)
+                .opacity(userInputName.isEmpty ? 0.3 : 1.0)
                 
                 
             }
             .navigationTitle("Add a new item")
+            .toolbar {
+                ToolbarItem (placement: .navigationBarTrailing){
+                    Button {
+                        print("IMPLEMENT ME")
+                    } label: {
+                        Image(systemName: "camera")
+                    }
+
+                }
+            }
         }
     }
 }
 struct AddItemView_Previews: PreviewProvider {
     static var previews: some View {
-        AddItemView(viewModel: AppViewModel(fridgeItems: [], recipes: []))
+        AddItemView(viewModel: AppViewModel(fridgeItems: []))
     }
 }
+
+private func calculateExpirationDate(days: Int) -> Date {
+        if days > 0 {
+            return Calendar.current.date(byAdding: .day, value: days, to: Date()) ?? Date()
+        } else {
+            return Date()
+        }
+    }
