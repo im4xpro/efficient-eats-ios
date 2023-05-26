@@ -1,23 +1,17 @@
-//
-//  RecipeIngredient.swift
-//  mealmate-ios
-//
-//  Created by Maximilian Kaiser on 26.05.23.
-//
-
 import Foundation
 
 struct RecipeIngredient: Identifiable {
     let id = UUID()
     let amount: Double
-    let item: any ConsumableItem
+    let unit: String
+    var itemName: String
 }
 
 extension RecipeIngredient {
     static let mockData = [
-        RecipeIngredient(amount: 2, item: Ingredient(name: "Flour")),
-        RecipeIngredient(amount: 2, item: Ingredient(name: "Milk")),
-        RecipeIngredient(amount: 0.1, item: Ingredient(name: "Salt")),
-        RecipeIngredient(amount: 2, item: Ingredient(name: "Eggs")),
+        RecipeIngredient(amount: 2, unit: "g", itemName: "Flour"),
+        RecipeIngredient(amount: 2, unit: "ml", itemName: "Olive Oil"),
+        RecipeIngredient(amount: 5, unit: "mg", itemName: "Salt"),
+        RecipeIngredient(amount: 2, unit: "pcs", itemName: "Eggs"),
     ]
 }

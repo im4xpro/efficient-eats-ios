@@ -9,7 +9,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Kühlschrank", systemImage: "refrigerator.fill")
                 }
-            RecipesView()
+            RecipesView(viewModel: viewModel)
                 .tabItem {
                     Label("Rezepte", systemImage: "menucard")
                 }
@@ -23,6 +23,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(viewModel: AppViewModel(fridgeItems: [], recipes: []))
+        MainView(viewModel: AppViewModel(fridgeItems: []))
     }
 }

@@ -5,7 +5,7 @@ import ParseSwift
 struct mealmate_iosApp: App {
     
     @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
-    let viewModel = AppViewModel(fridgeItems: [], recipes: [])
+    let viewModel = AppViewModel(fridgeItems: [])
     
     init() {
         loadMockDataToVM()
@@ -20,6 +20,6 @@ struct mealmate_iosApp: App {
     
     func loadMockDataToVM() {
         viewModel.fridgeItems += FridgeItem.mockItems
-        viewModel.recipes += Recipe.mockData
+        // viewModel.recipes += BackendRecipeResult.mockData
     }
 }
