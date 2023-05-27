@@ -41,14 +41,14 @@ struct RecipeListCell: View {
             }
             
             if countUsedItems == 1 {
-                Text("Dieses Rezept nutzt \(countUsedItems) bald abgelaufenes Lebensmittel aus deinem Kühlschrank!")
+                Text("Dieses Rezept nutzt \(countUsedItems) bald ablaufendes Lebensmittel aus deinem Kühlschrank!")
                     .bold()
                     .foregroundColor(.green)
             } else if countUsedItems == 0{
                 Text("Dieses Rezept nutzt Lebensmittel aus deinem Kühlschrank!")
                     .foregroundColor(.gray)
             } else {
-                Text("Dieses Rezept nutzt \(countUsedItems) bald abgelaufene Lebensmittel aus deinem Kühlschrank!")
+                Text("Dieses Rezept nutzt \(countUsedItems) bald ablaufende Lebensmittel aus deinem Kühlschrank!")
                     .bold()
                     .foregroundColor(.green)
             }

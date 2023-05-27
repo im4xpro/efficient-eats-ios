@@ -54,7 +54,7 @@ struct AddItemView: View {
                     
                     presentationMode.wrappedValue.dismiss()
                 }) {
-                    Text("Add to fridge")
+                    Text("Hinzufügen")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()
@@ -67,7 +67,7 @@ struct AddItemView: View {
                 
                 
             }
-            .navigationTitle("Add a new item")
+            .navigationTitle("Hinzufügen")
             .toolbar {
                 ToolbarItem (placement: .navigationBarTrailing){
                     Button {
