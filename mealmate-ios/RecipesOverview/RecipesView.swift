@@ -25,15 +25,21 @@ struct RecipesView: View {
             VStack {
                 List {
                     ForEach(searchResults, id: \.id) { recipe in
-                        RecipeListCell(recipe: recipe, viewModel: viewModel)
+                        NavigationLink {
+                            RecipeDetailView(viewModel: viewModel, recipe: recipe)
+                        } label: {
+                            RecipeListCell(recipe: recipe, viewModel: viewModel)
+                        }
+
+                        
                     }
                 }
                 .listStyle(.grouped)
             }
-            .navigationTitle("Recipes")
+            .navigationTitle("Rezepte")
             .navigationBarTitleDisplayMode(.automatic)
         }
-        .searchable(text: $searchText, prompt: "I'm looking for...")
+        .searchable(text: $searchText, prompt: "Ich suche nach...")
         .onAppear(
             perform: { viewModel.reloadRecipeData() }
         )
