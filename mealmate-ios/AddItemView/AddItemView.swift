@@ -18,14 +18,15 @@ struct AddItemView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
+            VStack(spacing: 10) {
                 TextField("Welches Gut hast du vor dir?", text: $userInputName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal)
                 
                 Stepper("Menge: \(userInputAmount)", value: $userInputAmount, in: 1...10)
                                     .padding(.horizontal)
-                
+                                    .padding(.bottom, 10)
+                Text("Gib das Haltbarkeitsdatum an.")
                 DatePicker("Haltbarkeitsdatum", selection: $userInputDate, displayedComponents: .date)
                     .datePickerStyle(.graphical)
                     .padding()
@@ -40,7 +41,7 @@ struct AddItemView: View {
                 if knownItem {
                     Text("Info: Geschätztes Haltbarkeitsdatum: \(item!.expirationTime) Tage.")
                 } else {
-                    Text("Gib das Haltbarkeitsdatum an.")
+                    Text("")
                 }
                 
                 Spacer()
@@ -73,6 +74,15 @@ struct AddItemView: View {
                         print("IMPLEMENT ME")
                     } label: {
                         Image(systemName: "camera")
+                    }
+
+                }
+                
+                ToolbarItem (placement: .navigationBarLeading){
+                    Button {
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Text("Abbrechen")
                     }
 
                 }
