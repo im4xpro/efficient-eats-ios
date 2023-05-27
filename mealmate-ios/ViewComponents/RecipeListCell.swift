@@ -7,7 +7,7 @@ struct RecipeListCell: View {
     @ObservedObject var viewModel: AppViewModel
     
     var fridgeItemsUsed: [FridgeItem] {
-        effiecient_eats_ios.fridgeItemsUsed(fridgeItems: viewModel.fridgeItems, in: recipe)
+        efficient_eats_ios.fridgeItemsUsed(fridgeItems: viewModel.fridgeItems, in: recipe)
     }
     
     var countUsedItems: Int {
@@ -38,18 +38,17 @@ struct RecipeListCell: View {
                     }
                 }
                 Spacer()
-              Image(systemName: "chevron.right")
             }
             
             if countUsedItems == 1 {
-                Text("This recipe will use \(countUsedItems) Item in your fridge that is due soon!")
+                Text("Dieses Rezept nutzt \(countUsedItems) bald abgelaufenes Lebensmittel aus deinem Kühlschrank!")
                     .bold()
                     .foregroundColor(.green)
             } else if countUsedItems == 0{
-                Text("This recipe may use ingredients from your fridge")
+                Text("Dieses Rezept nutzt Lebensmittel aus deinem Kühlschrank!")
                     .foregroundColor(.gray)
             } else {
-                Text("This recipe will use \(countUsedItems) Items in your fridge that are due soon!")
+                Text("Dieses Rezept nutzt \(countUsedItems) bald abgelaufene Lebensmittel aus deinem Kühlschrank!")
                     .bold()
                     .foregroundColor(.green)
             }

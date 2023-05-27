@@ -19,14 +19,14 @@ struct AddItemView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                TextField("What item are you looking at?", text: $userInputName)
+                TextField("Welches Gut hast du vor dir?", text: $userInputName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal)
                 
-                Stepper("Amount: \(userInputAmount)", value: $userInputAmount, in: 1...10)
+                Stepper("Menge: \(userInputAmount)", value: $userInputAmount, in: 1...10)
                                     .padding(.horizontal)
                 
-                DatePicker("Expiration date", selection: $userInputDate, displayedComponents: .date)
+                DatePicker("Haltbarkeitsdatum", selection: $userInputDate, displayedComponents: .date)
                     .datePickerStyle(.graphical)
                     .padding()
                     .onChange(of: knownItem) { newValue in
@@ -38,9 +38,9 @@ struct AddItemView: View {
                     }
                 
                 if knownItem {
-                    Text("Info: Expected shelf life: \(item!.expirationTime) days.")
+                    Text("Info: Geschätztes Haltbarkeitsdatum: \(item!.expirationTime) Tage.")
                 } else {
-                    Text("Select the expiration date.")
+                    Text("Gib das Haltbarkeitsdatum an.")
                 }
                 
                 Spacer()

@@ -8,8 +8,12 @@ struct ProfileView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Your personal fridge-KPIs:")
-                    .font(.headline)
+               
+                    Text("Deine Kühlschrank-KPIs:")
+                        .font(.headline)
+                    Text("Letzte 30 Tage")
+                        .font(.caption)
+                
                 // show 4 (?) KPIs for the last 30 days
                 // How many goods did get past the expiration date?
                 // Which items do you consume the least/most?
@@ -17,11 +21,12 @@ struct ProfileView: View {
                 //
                 KPIDataCell(value: "\(viewModel.avgDaysInFridge)d", description: "Durchschnittliche Zeit im Kühlschrank")
                 KPIDataCell(value: "\(viewModel.countExpiredItems)", description: "Abgelaufene/schlecht gewordene Lebensmittel")
+                KPIDataCell(value: "14.47kg", description: "Eingesparter Müll")
                 Divider()
-                Text("Special items")
+                Text("Deine beliebtesten / unbeliebtesten Produkte")
                     .font(.headline)
-                HighlightedItemCell(dataEntry: FridgeItemDataEntry(item: FridgeItem.mockItems.first!, checkoutDate: Date(), reachedExpirationDate: false, cause: .used), message: "Added: You cooked 12 recipes with this item in the last 30 days", type: .positive)
-                HighlightedItemCell(dataEntry: FridgeItemDataEntry(item: FridgeItem.mockItems.last!, checkoutDate: Date(), reachedExpirationDate: true, cause: .used), message: "8/10 items reached the expiration date", type: .negative)
+                HighlightedItemCell(dataEntry: FridgeItemDataEntry(item: FridgeItem.mockItems.first!, checkoutDate: Date(), reachedExpirationDate: false, cause: .used), message: "Du hast im letzten Monat 12 Rezepte mit diesem Lebensmittel gekocht!", type: .positive)
+                HighlightedItemCell(dataEntry: FridgeItemDataEntry(item: FridgeItem.mockItems.last!, checkoutDate: Date(), reachedExpirationDate: true, cause: .used), message: "Alle Lebensmittel dieses Typs haben das Ablaufdatum erreicht ☹️", type: .negative)
             }
             .padding()
             .navigationTitle("Hi, Maximilian")

@@ -53,7 +53,7 @@ struct FridgeItemCell: View {
             Button {
                 
             } label: {
-                Text("Show me recipes with this item!")
+                Text("Click to show details")
             }
 
         }

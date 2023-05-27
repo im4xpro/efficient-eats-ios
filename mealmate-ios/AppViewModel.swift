@@ -55,7 +55,6 @@ class AppViewModel: ObservableObject {
             print(dataEntry.daysInFridge)
             return partialResult + dataEntry.daysInFridge
         }
-        print(sum)
         return sum / FridgeItemDataEntry.mockData.count
     }
     

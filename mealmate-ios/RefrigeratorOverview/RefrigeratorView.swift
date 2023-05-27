@@ -29,14 +29,16 @@ struct RefrigeratorView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                List {
-                    ForEach(sortedResults) { item in
+                List{
+                    ForEach(sortedResults, id: \.id) { item in
                         FridgeItemCell(model: item)
                     }
+                    .onDelete(perform: delete)
+    
                 }
                 .listStyle(.grouped)
             }
-            .navigationTitle("My fridge")
+            .navigationTitle("Mein Kühlschrank")
             .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -65,10 +67,14 @@ struct RefrigeratorView: View {
                 AddItemView(viewModel: viewModel)
             }
         }
-        .searchable(text: $searchText, prompt: "I'm looking for...")
+        .searchable(text: $searchText, prompt: "Ich suche nach...")
         .onAppear(
             perform: { viewModel.reloadIngredientsData() }
         )
+    }
+    
+    func delete(at offsets: IndexSet) {
+        viewModel.fridgeItems.remove(atOffsets: offsets)
     }
 }
 
