@@ -7,7 +7,7 @@ struct RecipeListCell: View {
     @ObservedObject var viewModel: AppViewModel
     
     var fridgeItemsUsed: [FridgeItem] {
-        mealmate_ios.fridgeItemsUsed(fridgeItems: viewModel.fridgeItems, in: recipe)
+        effiecient_eats_ios.fridgeItemsUsed(fridgeItems: viewModel.fridgeItems, in: recipe)
     }
     
     var countUsedItems: Int {

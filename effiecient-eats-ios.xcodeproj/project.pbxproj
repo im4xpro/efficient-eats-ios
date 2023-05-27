@@ -78,13 +78,13 @@
 		A2BBEB9A2A20E31E00904B92 /* FridgeItemDataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemDataEntry.swift; sourceTree = "<group>"; };
 		A2BBEB9F2A21635000904B92 /* KPIDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPIDataCell.swift; sourceTree = "<group>"; };
 		A2BBEBA12A21721100904B92 /* HighlightedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedItemCell.swift; sourceTree = "<group>"; };
-		A2EDE1A02A1FFD0B000AB182 /* mealmate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mealmate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EDE1A02A1FFD0B000AB182 /* effiecient-eats-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "effiecient-eats-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EDE1A32A1FFD0B000AB182 /* mealmate_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosApp.swift; sourceTree = "<group>"; };
 		A2EDE1A72A1FFD0B000AB182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2EDE1AA2A1FFD0B000AB182 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A2EDE1B02A1FFD0B000AB182 /* mealmate-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mealmate-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EDE1B02A1FFD0B000AB182 /* effiecient-eats-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "effiecient-eats-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EDE1B42A1FFD0B000AB182 /* mealmate_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosTests.swift; sourceTree = "<group>"; };
-		A2EDE1BA2A1FFD0B000AB182 /* mealmate-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mealmate-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EDE1BA2A1FFD0B000AB182 /* effiecient-eats-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "effiecient-eats-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EDE1BE2A1FFD0B000AB182 /* mealmate_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosUITests.swift; sourceTree = "<group>"; };
 		A2EDE1C02A1FFD0B000AB182 /* mealmate_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealmate_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,9 +195,9 @@
 		A2EDE1A12A1FFD0B000AB182 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2EDE1A02A1FFD0B000AB182 /* mealmate-ios.app */,
-				A2EDE1B02A1FFD0B000AB182 /* mealmate-iosTests.xctest */,
-				A2EDE1BA2A1FFD0B000AB182 /* mealmate-iosUITests.xctest */,
+				A2EDE1A02A1FFD0B000AB182 /* effiecient-eats-ios.app */,
+				A2EDE1B02A1FFD0B000AB182 /* effiecient-eats-iosTests.xctest */,
+				A2EDE1BA2A1FFD0B000AB182 /* effiecient-eats-iosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,9 +251,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A2EDE19F2A1FFD0B000AB182 /* mealmate-ios */ = {
+		A2EDE19F2A1FFD0B000AB182 /* effiecient-eats-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2EDE1C42A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "mealmate-ios" */;
+			buildConfigurationList = A2EDE1C42A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "effiecient-eats-ios" */;
 			buildPhases = (
 				A2EDE19C2A1FFD0B000AB182 /* Sources */,
 				A2EDE19D2A1FFD0B000AB182 /* Frameworks */,
@@ -263,17 +263,17 @@
 			);
 			dependencies = (
 			);
-			name = "mealmate-ios";
+			name = "effiecient-eats-ios";
 			packageProductDependencies = (
 				A2EDE1CE2A1FFE2E000AB182 /* ParseSwift */,
 			);
 			productName = "mealmate-ios";
-			productReference = A2EDE1A02A1FFD0B000AB182 /* mealmate-ios.app */;
+			productReference = A2EDE1A02A1FFD0B000AB182 /* effiecient-eats-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A2EDE1AF2A1FFD0B000AB182 /* mealmate-iosTests */ = {
+		A2EDE1AF2A1FFD0B000AB182 /* effiecient-eats-iosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2EDE1C72A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "mealmate-iosTests" */;
+			buildConfigurationList = A2EDE1C72A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "effiecient-eats-iosTests" */;
 			buildPhases = (
 				A2EDE1AC2A1FFD0B000AB182 /* Sources */,
 				A2EDE1AD2A1FFD0B000AB182 /* Frameworks */,
@@ -284,14 +284,14 @@
 			dependencies = (
 				A2EDE1B22A1FFD0B000AB182 /* PBXTargetDependency */,
 			);
-			name = "mealmate-iosTests";
+			name = "effiecient-eats-iosTests";
 			productName = "mealmate-iosTests";
-			productReference = A2EDE1B02A1FFD0B000AB182 /* mealmate-iosTests.xctest */;
+			productReference = A2EDE1B02A1FFD0B000AB182 /* effiecient-eats-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A2EDE1B92A1FFD0B000AB182 /* mealmate-iosUITests */ = {
+		A2EDE1B92A1FFD0B000AB182 /* effiecient-eats-iosUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2EDE1CA2A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "mealmate-iosUITests" */;
+			buildConfigurationList = A2EDE1CA2A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "effiecient-eats-iosUITests" */;
 			buildPhases = (
 				A2EDE1B62A1FFD0B000AB182 /* Sources */,
 				A2EDE1B72A1FFD0B000AB182 /* Frameworks */,
@@ -302,9 +302,9 @@
 			dependencies = (
 				A2EDE1BC2A1FFD0B000AB182 /* PBXTargetDependency */,
 			);
-			name = "mealmate-iosUITests";
+			name = "effiecient-eats-iosUITests";
 			productName = "mealmate-iosUITests";
-			productReference = A2EDE1BA2A1FFD0B000AB182 /* mealmate-iosUITests.xctest */;
+			productReference = A2EDE1BA2A1FFD0B000AB182 /* effiecient-eats-iosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -330,7 +330,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A2EDE19B2A1FFD0B000AB182 /* Build configuration list for PBXProject "mealmate-ios" */;
+			buildConfigurationList = A2EDE19B2A1FFD0B000AB182 /* Build configuration list for PBXProject "effiecient-eats-ios" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -346,9 +346,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2EDE19F2A1FFD0B000AB182 /* mealmate-ios */,
-				A2EDE1AF2A1FFD0B000AB182 /* mealmate-iosTests */,
-				A2EDE1B92A1FFD0B000AB182 /* mealmate-iosUITests */,
+				A2EDE19F2A1FFD0B000AB182 /* effiecient-eats-ios */,
+				A2EDE1AF2A1FFD0B000AB182 /* effiecient-eats-iosTests */,
+				A2EDE1B92A1FFD0B000AB182 /* effiecient-eats-iosUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -432,12 +432,12 @@
 /* Begin PBXTargetDependency section */
 		A2EDE1B22A1FFD0B000AB182 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2EDE19F2A1FFD0B000AB182 /* mealmate-ios */;
+			target = A2EDE19F2A1FFD0B000AB182 /* effiecient-eats-ios */;
 			targetProxy = A2EDE1B12A1FFD0B000AB182 /* PBXContainerItemProxy */;
 		};
 		A2EDE1BC2A1FFD0B000AB182 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2EDE19F2A1FFD0B000AB182 /* mealmate-ios */;
+			target = A2EDE19F2A1FFD0B000AB182 /* effiecient-eats-ios */;
 			targetProxy = A2EDE1BB2A1FFD0B000AB182 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -628,7 +628,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mealmate-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mealmate-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/effiecient-eats-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/effiecient-eats-ios";
 			};
 			name = Debug;
 		};
@@ -647,7 +647,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mealmate-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mealmate-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/effiecient-eats-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/effiecient-eats-ios";
 			};
 			name = Release;
 		};
@@ -688,7 +688,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A2EDE19B2A1FFD0B000AB182 /* Build configuration list for PBXProject "mealmate-ios" */ = {
+		A2EDE19B2A1FFD0B000AB182 /* Build configuration list for PBXProject "effiecient-eats-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2EDE1C22A1FFD0B000AB182 /* Debug */,
@@ -697,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2EDE1C42A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "mealmate-ios" */ = {
+		A2EDE1C42A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "effiecient-eats-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2EDE1C52A1FFD0B000AB182 /* Debug */,
@@ -706,7 +706,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2EDE1C72A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "mealmate-iosTests" */ = {
+		A2EDE1C72A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "effiecient-eats-iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2EDE1C82A1FFD0B000AB182 /* Debug */,
@@ -715,7 +715,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2EDE1CA2A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "mealmate-iosUITests" */ = {
+		A2EDE1CA2A1FFD0B000AB182 /* Build configuration list for PBXNativeTarget "effiecient-eats-iosUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2EDE1CB2A1FFD0B000AB182 /* Debug */,
